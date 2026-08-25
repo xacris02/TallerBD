@@ -1,0 +1,598 @@
+/* ============================================================
+   DATOS DE PRUEBA - SISTEMA DE VENTA DE CARNES
+   Compatible con Oracle Database / Oracle Cloud
+   ============================================================ */
+
+
+/* ============================================================
+   1. CIUDADES
+   ============================================================ */
+
+INSERT ALL
+    INTO ciudades VALUES ('C001', 'Santiago')
+    INTO ciudades VALUES ('C002', 'Valparaiso')
+    INTO ciudades VALUES ('C003', 'Vina del Mar')
+    INTO ciudades VALUES ('C004', 'Concepcion')
+    INTO ciudades VALUES ('C005', 'La Serena')
+    INTO ciudades VALUES ('C006', 'Antofagasta')
+    INTO ciudades VALUES ('C007', 'Temuco')
+    INTO ciudades VALUES ('C008', 'Rancagua')
+    INTO ciudades VALUES ('C009', 'Talca')
+    INTO ciudades VALUES ('C010', 'Puerto Montt')
+    INTO ciudades VALUES ('C011', 'Arica')
+    INTO ciudades VALUES ('C012', 'Iquique')
+    INTO ciudades VALUES ('C013', 'Copiapo')
+    INTO ciudades VALUES ('C014', 'Coquimbo')
+    INTO ciudades VALUES ('C015', 'Ovalle')
+    INTO ciudades VALUES ('C016', 'Quilpue')
+    INTO ciudades VALUES ('C017', 'Los Andes')
+    INTO ciudades VALUES ('C018', 'San Antonio')
+    INTO ciudades VALUES ('C019', 'Curico')
+    INTO ciudades VALUES ('C020', 'Linares')
+    INTO ciudades VALUES ('C021', 'Chillan')
+    INTO ciudades VALUES ('C022', 'Los Angeles')
+    INTO ciudades VALUES ('C023', 'Angol')
+    INTO ciudades VALUES ('C024', 'Valdivia')
+    INTO ciudades VALUES ('C025', 'Osorno')
+    INTO ciudades VALUES ('C026', 'Castro')
+    INTO ciudades VALUES ('C027', 'Coyhaique')
+    INTO ciudades VALUES ('C028', 'Punta Arenas')
+    INTO ciudades VALUES ('C029', 'Calama')
+    INTO ciudades VALUES ('C030', 'Puerto Varas')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   2. CATEGORIAS DE ANIMAL
+   ============================================================ */
+
+INSERT ALL
+    INTO categorias_animal VALUES ('CAT001', 'Vacuno', 'Carne proveniente de ganado bovino')
+    INTO categorias_animal VALUES ('CAT002', 'Porcino', 'Carne proveniente de ganado porcino')
+    INTO categorias_animal VALUES ('CAT003', 'Ovino', 'Carne proveniente de ganado ovino')
+    INTO categorias_animal VALUES ('CAT004', 'Caprino', 'Carne proveniente de ganado caprino')
+    INTO categorias_animal VALUES ('CAT005', 'Aves', 'Carne proveniente de aves de corral')
+    INTO categorias_animal VALUES ('CAT006', 'Equino', 'Carne proveniente de ganado equino')
+    INTO categorias_animal VALUES ('CAT007', 'Conejo', 'Carne proveniente de conejos')
+    INTO categorias_animal VALUES ('CAT008', 'Pavo', 'Carne proveniente de pavos')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   3. TIPOS DE ANIMAL
+   ============================================================ */
+
+INSERT ALL
+    INTO tipos_animal VALUES ('TIP001', 'Vacuno')
+    INTO tipos_animal VALUES ('TIP002', 'Cerdo')
+    INTO tipos_animal VALUES ('TIP003', 'Cordero')
+    INTO tipos_animal VALUES ('TIP004', 'Pollo')
+    INTO tipos_animal VALUES ('TIP005', 'Pavo')
+    INTO tipos_animal VALUES ('TIP006', 'Cabra')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   4. EMPLEADOS
+   ============================================================ */
+
+INSERT ALL
+    INTO empleados VALUES ('EMP001','11111111-1','Carlos','Gonzalez','Administrador',DATE '2021-01-15')
+    INTO empleados VALUES ('EMP002','11111112-2','Maria','Rodriguez','Vendedora',DATE '2021-03-10')
+    INTO empleados VALUES ('EMP003','11111113-3','Juan','Perez','Vendedor',DATE '2021-04-20')
+    INTO empleados VALUES ('EMP004','11111114-4','Camila','Soto','Vendedora',DATE '2021-06-05')
+    INTO empleados VALUES ('EMP005','11111115-5','Pedro','Contreras','Carnicero',DATE '2021-07-12')
+    INTO empleados VALUES ('EMP006','11111116-6','Daniela','Rojas','Carnicera',DATE '2021-08-01')
+    INTO empleados VALUES ('EMP007','11111117-7','Felipe','Martinez','Vendedor',DATE '2021-09-14')
+    INTO empleados VALUES ('EMP008','11111118-8','Valentina','Morales','Vendedora',DATE '2021-10-22')
+    INTO empleados VALUES ('EMP009','11111119-9','Andres','Vargas','Carnicero',DATE '2022-01-10')
+    INTO empleados VALUES ('EMP010','11111120-0','Fernanda','Castillo','Vendedora',DATE '2022-02-18')
+    INTO empleados VALUES ('EMP011','11111121-1','Sebastian','Fuentes','Repartidor',DATE '2022-03-12')
+    INTO empleados VALUES ('EMP012','11111122-2','Javiera','Torres','Vendedora',DATE '2022-04-25')
+    INTO empleados VALUES ('EMP013','11111123-3','Diego','Araya','Carnicero',DATE '2022-05-30')
+    INTO empleados VALUES ('EMP014','11111124-4','Francisca','Espinoza','Vendedora',DATE '2022-06-15')
+    INTO empleados VALUES ('EMP015','11111125-5','Nicolas','Bravo','Repartidor',DATE '2022-07-20')
+    INTO empleados VALUES ('EMP016','11111126-6','Constanza','Paredes','Administradora',DATE '2022-08-10')
+    INTO empleados VALUES ('EMP017','11111127-7','Cristobal','Reyes','Vendedor',DATE '2022-09-05')
+    INTO empleados VALUES ('EMP018','11111128-8','Antonia','Vega','Vendedora',DATE '2022-10-11')
+    INTO empleados VALUES ('EMP019','11111129-9','Matias','Navarro','Carnicero',DATE '2022-11-20')
+    INTO empleados VALUES ('EMP020','11111130-0','Paula','Molina','Vendedora',DATE '2023-01-05')
+    INTO empleados VALUES ('EMP021','11111131-1','Rodrigo','Silva','Repartidor',DATE '2023-02-10')
+    INTO empleados VALUES ('EMP022','11111132-2','Catalina','Perez','Vendedora',DATE '2023-03-15')
+    INTO empleados VALUES ('EMP023','11111133-3','Ignacio','Munoz','Carnicero',DATE '2023-04-20')
+    INTO empleados VALUES ('EMP024','11111134-4','Sofia','Herrera','Vendedora',DATE '2023-05-18')
+    INTO empleados VALUES ('EMP025','11111135-5','Benjamin','Salazar','Repartidor',DATE '2023-06-12')
+    INTO empleados VALUES ('EMP026','11111136-6','Daniel','Vidal','Vendedor',DATE '2023-07-08')
+    INTO empleados VALUES ('EMP027','11111137-7','Isidora','Campos','Vendedora',DATE '2023-08-14')
+    INTO empleados VALUES ('EMP028','11111138-8','Martin','Gutierrez','Carnicero',DATE '2023-09-21')
+    INTO empleados VALUES ('EMP029','11111139-9','Florencia','Ramirez','Vendedora',DATE '2023-10-05')
+    INTO empleados VALUES ('EMP030','11111140-0','Tomas','Perez','Repartidor',DATE '2023-11-13')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   5. PROVEEDORES
+   ============================================================ */
+
+INSERT ALL
+    INTO proveedores VALUES ('PROV001','76111111-1','Carnes del Sur SpA','912345678','ventas@carnesdelsur.cl','Av. Central 100')
+    INTO proveedores VALUES ('PROV002','76111112-2','Frigorifico Andes Ltda','912345679','contacto@frigoandes.cl','Av. Los Andes 200')
+    INTO proveedores VALUES ('PROV003','76111113-3','Carnes Premium Chile','912345680','ventas@carnespremium.cl','Camino Melipilla 300')
+    INTO proveedores VALUES ('PROV004','76111114-4','Distribuidora Ganadera SpA','912345681','contacto@ganadera.cl','Ruta 5 Norte 400')
+    INTO proveedores VALUES ('PROV005','76111115-5','Frigorifico Central','912345682','ventas@fricentral.cl','Av. Industrial 500')
+    INTO proveedores VALUES ('PROV006','76111116-6','Carnes del Valle','912345683','ventas@carnesvalle.cl','Ruta 68 Km 20')
+    INTO proveedores VALUES ('PROV007','76111117-7','Ganadera Nacional','912345684','contacto@ganadera.cl','Av. Libertador 700')
+    INTO proveedores VALUES ('PROV008','76111118-8','Carnes Selectas SpA','912345685','ventas@selectas.cl','Av. Providencia 800')
+    INTO proveedores VALUES ('PROV009','76111119-9','Frigorifico Pacifico','912345686','ventas@pacifico.cl','Av. Costanera 900')
+    INTO proveedores VALUES ('PROV010','76111120-0','Distribuciones del Sur','912345687','contacto@delsur.cl','Av. Alemania 1000')
+    INTO proveedores VALUES ('PROV011','76111121-1','Carnes Austral','912345688','ventas@austral.cl','Ruta Austral 1100')
+    INTO proveedores VALUES ('PROV012','76111122-2','Productos Carnicos Chile','912345689','ventas@prodcarne.cl','Av. Norte 1200')
+    INTO proveedores VALUES ('PROV013','76111123-3','Ganados del Pacifico','912345690','contacto@ganados.cl','Av. Pacifico 1300')
+    INTO proveedores VALUES ('PROV014','76111124-4','Carnes del Maule','912345691','ventas@maule.cl','Ruta 5 Sur 1400')
+    INTO proveedores VALUES ('PROV015','76111125-5','Frigorifico Cordillera','912345692','ventas@cordillera.cl','Av. Cordillera 1500')
+    INTO proveedores VALUES ('PROV016','76111126-6','Carnes Tradicionales','912345693','contacto@tradicional.cl','Av. Matta 1600')
+    INTO proveedores VALUES ('PROV017','76111127-7','Distribuidora Premium','912345694','ventas@premium.cl','Av. Italia 1700')
+    INTO proveedores VALUES ('PROV018','76111128-8','Carnes Selectas del Sur','912345695','ventas@selectassur.cl','Av. Sur 1800')
+    INTO proveedores VALUES ('PROV019','76111129-9','Ganadera Los Lagos','912345696','contacto@loslagos.cl','Av. Lagos 1900')
+    INTO proveedores VALUES ('PROV020','76111130-0','Frigorifico Nacional','912345697','ventas@frigonacional.cl','Av. Nacional 2000')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   6. CLIENTES
+   100 CLIENTES GENERADOS AUTOMATICAMENTE
+   ============================================================ */
+
+BEGIN
+    FOR i IN 1..100 LOOP
+
+        INSERT INTO clientes
+        (
+            id_cliente,
+            id_ciudad,
+            documento_identidad,
+            nombre,
+            apellido,
+            telefono,
+            correo,
+            puntos_fidelidad,
+            fecha_registro
+        )
+        VALUES
+        (
+            'CLI' || LPAD(i,7,'0'),
+            'C' || LPAD(MOD(i-1,30)+1,3,'0'),
+            '222' || LPAD(i,5,'0') || '-' || MOD(i,10),
+            CASE MOD(i,10)
+                WHEN 0 THEN 'Carlos'
+                WHEN 1 THEN 'Maria'
+                WHEN 2 THEN 'Juan'
+                WHEN 3 THEN 'Camila'
+                WHEN 4 THEN 'Pedro'
+                WHEN 5 THEN 'Daniela'
+                WHEN 6 THEN 'Felipe'
+                WHEN 7 THEN 'Valentina'
+                WHEN 8 THEN 'Andres'
+                ELSE 'Fernanda'
+            END,
+            CASE MOD(i,10)
+                WHEN 0 THEN 'Gonzalez'
+                WHEN 1 THEN 'Rodriguez'
+                WHEN 2 THEN 'Perez'
+                WHEN 3 THEN 'Soto'
+                WHEN 4 THEN 'Contreras'
+                WHEN 5 THEN 'Rojas'
+                WHEN 6 THEN 'Martinez'
+                WHEN 7 THEN 'Morales'
+                WHEN 8 THEN 'Vargas'
+                ELSE 'Castillo'
+            END,
+            '9' || LPAD(10000000+i,8,'0'),
+            'cliente' || i || '@correo.cl',
+            MOD(i * 137,1000),
+            SYSDATE - MOD(i*7,1000)
+        );
+
+    END LOOP;
+
+    COMMIT;
+END;
+/
+
+
+/* ============================================================
+   7. CORTES
+   ============================================================ */
+
+INSERT ALL
+    INTO cortes VALUES ('COR001','TIP001','CAT001','Lomo Vetado','Corte premium de vacuno con buena infiltracion de grasa','https://ejemplo.cl/lomo-vetado.jpg')
+    INTO cortes VALUES ('COR002','TIP001','CAT001','Lomo Liso','Corte magro y tierno de vacuno','https://ejemplo.cl/lomo-liso.jpg')
+    INTO cortes VALUES ('COR003','TIP001','CAT001','Filete','Corte muy tierno y magro','https://ejemplo.cl/filete.jpg')
+    INTO cortes VALUES ('COR004','TIP001','CAT001','Asiento','Corte versatil para horno o parrilla','https://ejemplo.cl/asiento.jpg')
+    INTO cortes VALUES ('COR005','TIP001','CAT001','Posta Negra','Corte magro ideal para preparaciones al horno','https://ejemplo.cl/posta-negra.jpg')
+    INTO cortes VALUES ('COR006','TIP001','CAT001','Posta Rosada','Corte magro y de textura firme','https://ejemplo.cl/posta-rosada.jpg')
+    INTO cortes VALUES ('COR007','TIP001','CAT001','Huachalomo','Corte tradicional para cazuelas y estofados','https://ejemplo.cl/huachalomo.jpg')
+    INTO cortes VALUES ('COR008','TIP001','CAT001','Tapapecho','Corte ideal para cocciones prolongadas','https://ejemplo.cl/tapapecho.jpg')
+    INTO cortes VALUES ('COR009','TIP001','CAT001','Plateada','Corte ideal para horno y coccion lenta','https://ejemplo.cl/plateada.jpg')
+    INTO cortes VALUES ('COR010','TIP001','CAT001','Entraña','Corte sabroso ideal para parrilla','https://ejemplo.cl/entrana.jpg')
+
+    INTO cortes VALUES ('COR011','TIP002','CAT002','Costillar de Cerdo','Costillar con abundante carne y grasa','https://ejemplo.cl/costillar-cerdo.jpg')
+    INTO cortes VALUES ('COR012','TIP002','CAT002','Pulpa de Cerdo','Corte magro y versatil','https://ejemplo.cl/pulpa-cerdo.jpg')
+    INTO cortes VALUES ('COR013','TIP002','CAT002','Lomo de Cerdo','Corte tierno y magro','https://ejemplo.cl/lomo-cerdo.jpg')
+    INTO cortes VALUES ('COR014','TIP002','CAT002','Chuleta de Cerdo','Chuleta individual ideal para plancha','https://ejemplo.cl/chuleta.jpg')
+    INTO cortes VALUES ('COR015','TIP002','CAT002','Panceta','Corte con alto contenido de grasa','https://ejemplo.cl/panceta.jpg')
+    INTO cortes VALUES ('COR016','TIP002','CAT002','Paleta de Cerdo','Corte ideal para preparaciones lentas','https://ejemplo.cl/paleta-cerdo.jpg')
+    INTO cortes VALUES ('COR017','TIP002','CAT002','Costilla BBQ','Costillas preparadas para parrilla','https://ejemplo.cl/costilla-bbq.jpg')
+
+    INTO cortes VALUES ('COR018','TIP003','CAT003','Pierna de Cordero','Corte premium para horno','https://ejemplo.cl/pierna-cordero.jpg')
+    INTO cortes VALUES ('COR019','TIP003','CAT003','Costillar de Cordero','Costillas tiernas y sabrosas','https://ejemplo.cl/costillar-cordero.jpg')
+    INTO cortes VALUES ('COR020','TIP003','CAT003','Paleta de Cordero','Corte ideal para coccion lenta','https://ejemplo.cl/paleta-cordero.jpg')
+    INTO cortes VALUES ('COR021','TIP003','CAT003','Chuleta de Cordero','Corte individual para parrilla','https://ejemplo.cl/chuleta-cordero.jpg')
+    INTO cortes VALUES ('COR022','TIP003','CAT003','Lomo de Cordero','Corte tierno y premium','https://ejemplo.cl/lomo-cordero.jpg')
+
+    INTO cortes VALUES ('COR023','TIP004','CAT005','Pechuga de Pollo','Carne blanca magra sin hueso','https://ejemplo.cl/pechuga.jpg')
+    INTO cortes VALUES ('COR024','TIP004','CAT005','Trutro Entero','Corte con hueso y piel','https://ejemplo.cl/trutro.jpg')
+    INTO cortes VALUES ('COR025','TIP004','CAT005','Trutro Deshuesado','Corte sin hueso ideal para cocina rapida','https://ejemplo.cl/trutro-deshuesado.jpg')
+    INTO cortes VALUES ('COR026','TIP004','CAT005','Alas de Pollo','Alas ideales para horno o fritura','https://ejemplo.cl/alas.jpg')
+    INTO cortes VALUES ('COR027','TIP004','CAT005','Pollo Entero','Pollo entero fresco','https://ejemplo.cl/pollo-entero.jpg')
+    INTO cortes VALUES ('COR028','TIP004','CAT005','Filetitos de Pollo','Filetes pequenos y tiernos','https://ejemplo.cl/filetitos.jpg')
+
+    INTO cortes VALUES ('COR029','TIP005','CAT008','Pechuga de Pavo','Pechuga magra y saludable','https://ejemplo.cl/pechuga-pavo.jpg')
+    INTO cortes VALUES ('COR030','TIP005','CAT008','Trutro de Pavo','Corte con hueso ideal para horno','https://ejemplo.cl/trutro-pavo.jpg')
+    INTO cortes VALUES ('COR031','TIP005','CAT008','Pavo Entero','Pavo entero fresco','https://ejemplo.cl/pavo-entero.jpg')
+
+    INTO cortes VALUES ('COR032','TIP006','CAT004','Pierna de Cabra','Corte tradicional para preparaciones largas','https://ejemplo.cl/pierna-cabra.jpg')
+    INTO cortes VALUES ('COR033','TIP006','CAT004','Costillar de Cabra','Costillar fresco de cabra','https://ejemplo.cl/costillar-cabra.jpg')
+    INTO cortes VALUES ('COR034','TIP006','CAT004','Paleta de Cabra','Corte ideal para estofados','https://ejemplo.cl/paleta-cabra.jpg')
+
+    INTO cortes VALUES ('COR035','TIP001','CAT001','T-Bone','Corte premium con hueso','https://ejemplo.cl/tbone.jpg')
+    INTO cortes VALUES ('COR036','TIP001','CAT001','Tomahawk','Corte premium de gran tamano','https://ejemplo.cl/tomahawk.jpg')
+    INTO cortes VALUES ('COR037','TIP001','CAT001','Punta de Ganso','Corte ideal para parrilla','https://ejemplo.cl/punta-ganso.jpg')
+    INTO cortes VALUES ('COR038','TIP001','CAT001','Asado de Tira','Corte con hueso para parrilla','https://ejemplo.cl/asado-tira.jpg')
+    INTO cortes VALUES ('COR039','TIP001','CAT001','Sobrecostilla','Corte sabroso para horno','https://ejemplo.cl/sobrecostilla.jpg')
+    INTO cortes VALUES ('COR040','TIP001','CAT001','Pollo Ganso','Corte magro para horno','https://ejemplo.cl/pollo-ganso.jpg')
+
+    INTO cortes VALUES ('COR041','TIP002','CAT002','Bondiola','Corte jugoso de cerdo','https://ejemplo.cl/bondiola.jpg')
+    INTO cortes VALUES ('COR042','TIP002','CAT002','Secreto de Cerdo','Corte premium con infiltracion de grasa','https://ejemplo.cl/secreto.jpg')
+    INTO cortes VALUES ('COR043','TIP002','CAT002','Carrillera de Cerdo','Corte ideal para coccion lenta','https://ejemplo.cl/carrillera.jpg')
+    INTO cortes VALUES ('COR044','TIP003','CAT003','Medallon de Cordero','Corte premium individual','https://ejemplo.cl/medallon.jpg')
+    INTO cortes VALUES ('COR045','TIP003','CAT003','Paleta Deshuesada','Paleta de cordero sin hueso','https://ejemplo.cl/paleta-deshuesada.jpg')
+    INTO cortes VALUES ('COR046','TIP004','CAT005','Muslo de Pollo','Muslo fresco de pollo','https://ejemplo.cl/muslo.jpg')
+    INTO cortes VALUES ('COR047','TIP004','CAT005','Suprema de Pollo','Pechuga premium de pollo','https://ejemplo.cl/suprema.jpg')
+    INTO cortes VALUES ('COR048','TIP005','CAT008','Medallones de Pavo','Medallones de pavo frescos','https://ejemplo.cl/medallones-pavo.jpg')
+    INTO cortes VALUES ('COR049','TIP006','CAT004','Costillas Premium','Costillas seleccionadas de cabra','https://ejemplo.cl/costillas-premium.jpg')
+    INTO cortes VALUES ('COR050','TIP001','CAT001','Bife de Chorizo','Corte premium para parrilla','https://ejemplo.cl/bife.jpg')
+SELECT 1 FROM dual;
+
+COMMIT;
+
+
+/* ============================================================
+   8. INVENTARIO
+   150 REGISTROS
+   ============================================================ */
+
+BEGIN
+
+    FOR i IN 1..150 LOOP
+
+        INSERT INTO inventario_stock
+        (
+            id_inventario,
+            id_corte,
+            id_proveedor,
+            stock_kilos,
+            precio_costo_kilo,
+            precio_venta_kilo,
+            fecha_ingreso,
+            fecha_vencimiento,
+            estado_frescura
+        )
+        VALUES
+        (
+            'INV' || LPAD(i,7,'0'),
+
+            'COR' || LPAD(MOD(i-1,50)+1,3,'0'),
+
+            'PROV' || LPAD(MOD(i-1,20)+1,3,'0'),
+
+            ROUND(10 + MOD(i*17,150),2),
+
+            ROUND(2500 + MOD(i*731,7000),0),
+
+            ROUND(
+                (2500 + MOD(i*731,7000)) * 1.35,
+                0
+            ),
+
+            SYSDATE - MOD(i,120),
+
+            SYSDATE + MOD(i,30) + 5,
+
+            CASE MOD(i,5)
+                WHEN 0 THEN 'Disponible'
+                WHEN 1 THEN 'Disponible'
+                WHEN 2 THEN 'Fresco'
+                WHEN 3 THEN 'Refrigerado'
+                ELSE 'Disponible'
+            END
+        );
+
+    END LOOP;
+
+    COMMIT;
+
+END;
+/
+
+
+/* ============================================================
+   9. PEDIDOS
+   200 PEDIDOS
+   ============================================================ */
+
+BEGIN
+
+    FOR i IN 1..200 LOOP
+
+        INSERT INTO pedidos
+        (
+            id_pedido,
+            id_cliente,
+            id_empleado,
+            id_ciudad_despacho,
+            monto_total,
+            fecha_pedido,
+            estado_pedido,
+            metodo_pago,
+            canal_venta
+        )
+        VALUES
+        (
+            'PED' || LPAD(i,7,'0'),
+
+            'CLI' || LPAD(MOD(i-1,100)+1,7,'0'),
+
+            'EMP' || LPAD(MOD(i-1,30)+1,3,'0'),
+
+            'C' || LPAD(MOD(i*3-1,30)+1,3,'0'),
+
+            0,
+
+            SYSDATE - MOD(i*3,365),
+
+            CASE MOD(i,6)
+                WHEN 0 THEN 'Entregado'
+                WHEN 1 THEN 'Entregado'
+                WHEN 2 THEN 'Procesando'
+                WHEN 3 THEN 'En despacho'
+                WHEN 4 THEN 'Entregado'
+                ELSE 'Cancelado'
+            END,
+
+            CASE MOD(i,5)
+                WHEN 0 THEN 'Tarjeta de credito'
+                WHEN 1 THEN 'Tarjeta de debito'
+                WHEN 2 THEN 'Transferencia'
+                WHEN 3 THEN 'Efectivo'
+                ELSE 'Webpay'
+            END,
+
+            CASE MOD(i,4)
+                WHEN 0 THEN 'Tienda fisica'
+                WHEN 1 THEN 'Pagina web'
+                WHEN 2 THEN 'Aplicacion movil'
+                ELSE 'Telefono'
+            END
+        );
+
+    END LOOP;
+
+    COMMIT;
+
+END;
+/
+
+
+/* ============================================================
+   10. DETALLES DE PEDIDO
+   CADA PEDIDO TENDRA 2 DETALLES
+   ============================================================ */
+
+BEGIN
+
+    FOR i IN 1..200 LOOP
+
+        INSERT INTO detalles_pedido
+        (
+            id_pedido,
+            id_inventario,
+            kilos_pedidos,
+            precio_unitario_aplicado
+        )
+        VALUES
+        (
+            'PED' || LPAD(i,7,'0'),
+
+            'INV' || LPAD(MOD((i-1)*2,150)+1,7,'0'),
+
+            ROUND(1 + MOD(i*7,10) / 2,2),
+
+            (
+                SELECT precio_venta_kilo
+                FROM inventario_stock
+                WHERE id_inventario =
+                    'INV' || LPAD(MOD((i-1)*2,150)+1,7,'0')
+            )
+        );
+
+        INSERT INTO detalles_pedido
+        (
+            id_pedido,
+            id_inventario,
+            kilos_pedidos,
+            precio_unitario_aplicado
+        )
+        VALUES
+        (
+            'PED' || LPAD(i,7,'0'),
+
+            'INV' || LPAD(MOD((i-1)*2+1,150)+1,7,'0'),
+
+            ROUND(1 + MOD(i*11,12) / 2,2),
+
+            (
+                SELECT precio_venta_kilo
+                FROM inventario_stock
+                WHERE id_inventario =
+                    'INV' || LPAD(MOD((i-1)*2+1,150)+1,7,'0')
+            )
+        );
+
+    END LOOP;
+
+    COMMIT;
+
+END;
+/
+
+
+/* ============================================================
+   11. ACTUALIZAR EL MONTO TOTAL DE LOS PEDIDOS
+   ============================================================ */
+
+UPDATE pedidos p
+SET monto_total =
+(
+    SELECT NVL(
+        SUM(
+            d.kilos_pedidos *
+            d.precio_unitario_aplicado
+        ),0
+    )
+    FROM detalles_pedido d
+    WHERE d.id_pedido = p.id_pedido
+);
+
+COMMIT;
+
+
+/* ============================================================
+   12. ACTUALIZAR PUNTOS DE FIDELIDAD
+   ============================================================ */
+
+UPDATE clientes c
+SET puntos_fidelidad =
+(
+    SELECT NVL(
+        FLOOR(SUM(p.monto_total) / 1000),
+        0
+    )
+    FROM pedidos p
+    WHERE p.id_cliente = c.id_cliente
+);
+
+COMMIT;
+
+
+/* ============================================================
+   13. VERIFICACION DE CANTIDADES
+   ============================================================ */
+
+SELECT 'CIUDADES' AS TABLA, COUNT(*) AS CANTIDAD
+FROM ciudades
+UNION ALL
+SELECT 'CATEGORIAS_ANIMAL', COUNT(*)
+FROM categorias_animal
+UNION ALL
+SELECT 'TIPOS_ANIMAL', COUNT(*)
+FROM tipos_animal
+UNION ALL
+SELECT 'EMPLEADOS', COUNT(*)
+FROM empleados
+UNION ALL
+SELECT 'PROVEEDORES', COUNT(*)
+FROM proveedores
+UNION ALL
+SELECT 'CLIENTES', COUNT(*)
+FROM clientes
+UNION ALL
+SELECT 'CORTES', COUNT(*)
+FROM cortes
+UNION ALL
+SELECT 'INVENTARIO_STOCK', COUNT(*)
+FROM inventario_stock
+UNION ALL
+SELECT 'PEDIDOS', COUNT(*)
+FROM pedidos
+UNION ALL
+SELECT 'DETALLES_PEDIDO', COUNT(*)
+FROM detalles_pedido
+ORDER BY 1;
+
+
+/* ============================================================
+   14. COMPROBAR PEDIDOS CON SUS DETALLES
+   ============================================================ */
+
+SELECT
+    p.id_pedido,
+    c.nombre || ' ' || c.apellido AS cliente,
+    e.nombre || ' ' || e.apellido AS empleado,
+    ci.nombre AS ciudad_despacho,
+    p.monto_total,
+    p.fecha_pedido,
+    p.estado_pedido,
+    p.metodo_pago,
+    p.canal_venta
+FROM pedidos p
+JOIN clientes c
+    ON p.id_cliente = c.id_cliente
+JOIN empleados e
+    ON p.id_empleado = e.id_empleado
+JOIN ciudades ci
+    ON p.id_ciudad_despacho = ci.id_ciudad
+ORDER BY p.fecha_pedido DESC;
+
+
+/* ============================================================
+   15. COMPROBAR INVENTARIO CON CORTES Y PROVEEDORES
+   ============================================================ */
+
+SELECT
+    i.id_inventario,
+    co.nombre AS corte,
+    ta.nombre AS tipo_animal,
+    ca.letra_categoria AS categoria,
+    pr.razon_social AS proveedor,
+    i.stock_kilos,
+    i.precio_costo_kilo,
+    i.precio_venta_kilo,
+    i.fecha_ingreso,
+    i.fecha_vencimiento,
+    i.estado_frescura
+FROM inventario_stock i
+JOIN cortes co
+    ON i.id_corte = co.id_corte
+JOIN tipos_animal ta
+    ON co.id_tipo_animal = ta.id_tipo_animal
+JOIN categorias_animal ca
+    ON co.id_categoria_animal = ca.id_categoria_animal
+JOIN proveedores pr
+    ON i.id_proveedor = pr.id_proveedor
+ORDER BY i.id_inventario;
+
+
+/* ============================================================
+   FIN DEL SCRIPT
+   ============================================================ */
